@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r09-4N-yLb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--普通归档-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="归档" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="good light" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ak1-qB-nwY">
+                                <frame key="frameInset" minX="49" minY="101" width="276" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dW9-9o-QvK">
+                                <frame key="frameInset" minX="64" minY="232" width="31" height="30"/>
+                                <state key="normal" title="归档"/>
+                                <connections>
+                                    <action selector="archveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kws-dT-SBP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkd-ex-nK9">
+                                <frame key="frameInset" minX="294" minY="232" width="31" height="30"/>
+                                <state key="normal" title="解档"/>
+                                <connections>
+                                    <action selector="unArchveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uP3-xV-eUx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dW9-9o-QvK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="3io-ti-xra"/>
+                            <constraint firstItem="jkd-ex-nK9" firstAttribute="top" secondItem="ak1-qB-nwY" secondAttribute="bottom" constant="101" id="Tc6-tJ-570"/>
+                            <constraint firstItem="dW9-9o-QvK" firstAttribute="top" secondItem="ak1-qB-nwY" secondAttribute="bottom" constant="101" id="fOi-os-LKc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jkd-ex-nK9" secondAttribute="trailing" constant="34" id="qOE-tC-6RV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="普通归档" id="FYc-jE-77I"/>
+                    <connections>
+                        <outlet property="textField" destination="ak1-qB-nwY" id="KBg-v2-bnH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.79999999999995" y="109.29535232383809"/>
+        </scene>
+        <!--归档模型-->
+        <scene sceneID="L31-Ub-FTZ">
+            <objects>
+                <viewController id="VRS-AH-z5x" customClass="ViewController2" customModule="归档" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lPp-4V-Nte"/>
+                        <viewControllerLayoutGuide type="bottom" id="7t2-2i-86b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Gn-En-I7V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFZ-oD-5Gi">
+                                <state key="normal" title="归档模型"/>
+                                <connections>
+                                    <action selector="archveModel:" destination="VRS-AH-z5x" eventType="touchUpInside" id="zI4-E0-LNX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br0-TM-DlU">
+                                <state key="normal" title="解档模型"/>
+                                <connections>
+                                    <action selector="unarchveModel:" destination="VRS-AH-z5x" eventType="touchUpInside" id="gm1-2M-hHz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="br0-TM-DlU" secondAttribute="trailing" constant="30" id="L8c-27-LoK"/>
+                            <constraint firstItem="nFZ-oD-5Gi" firstAttribute="top" secondItem="lPp-4V-Nte" secondAttribute="bottom" constant="283" id="Tlg-W4-iv4"/>
+                            <constraint firstItem="br0-TM-DlU" firstAttribute="top" secondItem="lPp-4V-Nte" secondAttribute="bottom" constant="283" id="gs3-3q-j1F"/>
+                            <constraint firstItem="nFZ-oD-5Gi" firstAttribute="leading" secondItem="9Gn-En-I7V" secondAttribute="leadingMargin" constant="23" id="zXS-V0-U2g"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="归档模型" id="5jO-EE-0Hf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVI-Vy-h64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736.8" y="108.39580209895054"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UUZ-Qe-V9a">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r09-4N-yLb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ptp-EW-Ivc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xvh-kR-Wl6"/>
+                        <segue destination="VRS-AH-z5x" kind="relationship" relationship="viewControllers" id="ja2-Pe-Dyl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofK-fl-8Gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="-700"/>
+        </scene>
+    </scenes>
+</document>
